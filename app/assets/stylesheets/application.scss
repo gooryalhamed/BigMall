@@ -2,3 +2,13 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+.custom-header{border-radius:0;border-bottom:1px solid #bfbfbf}
+.custom-header .container-fluid{width:750px}
+.custom-header .navbar-brand{font-family:'Open Sans';text-shadow:none;width:160px;color:#6699ff;font-weight:700;font-size:40px}
+.custom-header a,.custom-header a:hover{text-decoration:none}
+.custom-header a #career{color:#fff;font-size:22px;font-family:'Great Vibes'}
+.custom-header .nav li a{color:#bfbfbf}
+.custom-header .nav li a:hover{color:#fff;background-color:#202020}
+@media (min-width:768px){
+	.custom-header{padding:20px 40px}
+}
