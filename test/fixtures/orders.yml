@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orderId: 1
+  customerId: 1
+  wayofPaying: MyString
+  shippingCompany: 
+  shippingDate: 2017-04-19
+  shippingCost: 1.5
+
+two:
+  orderId: 1
+  customerId: 1
+  wayofPaying: MyString
+  shippingCompany: 
+  shippingDate: 2017-04-19
+  shippingCost: 1.5

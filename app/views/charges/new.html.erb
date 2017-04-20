@@ -1,18 +1,13 @@
-rm_tag charges_path do %>
-  <article>
+<%= form_tag charges_path, id:'chargeForm' do %>
+
     <% if flash[:error].present? %>
       <div id="error_explanation">
         <p><%= flash[:error] %></p>
       </div>
     <% end %>
-    <label class="amount">
-      <span>Amount: $5.00</span>
-    </label>
-  </article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"
-          data-locale="auto"></script>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"</script>
+  <%= hidden_field_tag 'stripeToken' %>
+  <%= hidden_field_tag 'stripeEmail' %>
+    <button id="btn-buy" class="btn btn-success btn-lg btn-block"></button><span class="glyphicon glyphicon-ok">Buy Now!</span>
 <% end %>

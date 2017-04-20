@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>EcommerceWebsite</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<head>
+	<title>Big Mall</title>
+	<%= csrf_meta_tags %>
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<nav class="navbar navbar-default navbar-fixed-top custom-header">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand">BigMall</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="navbar-links">
+				<ul class="nav navbar-nav">
+					<li><a href="application.html.erb">Home</a></li>
+					<li><a href="">Collection</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="">Services</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- footer -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h6>follow us</h6>
+				<ul class="list-inline">
+					<li><i class="fa fa-facebook"></i></li>
+					<li><i class="fa fa-twitter"></i></li>
+					<li><i class="fa fa-instagram"></i></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				
+			</div>
+			<div class="col-sm-4">
+				
+			</div>
+		</div>
+		<div class="row">
+			<p>&copy;2017 By Goory Hamed.</p>
+		</div>
+	</div>
+</footer>
+<body>
+	<%= yield %>
+</body>
 </html>
