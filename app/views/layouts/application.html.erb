@@ -4,72 +4,70 @@
 	<title>Big Mall</title>
 	<%= csrf_meta_tags %>
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-	<%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Seymour+One'%>
+	<%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Indie+Flower'%>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-<nav class="navbar navbar-fixed-top custom-header">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand">BigMall</a>
-			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
-				<i class="fa fa-bars"></i>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse navbar-right" id="navbar-links">
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="application.html.erb">Home</a>
-					<hr>
-				</li>
-				<li>
-					<a href="collection.html">Collection</a>
-				</li>
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="services.html">Services</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-<!-- header -->
-<header>
-	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-</header>
-<!-- footer -->
-<footer>
-	<div class="container">
-		<div class="row text-center" id="upper">
-			<div class="col-sm-3">
-				<p class="heading">Follow Us</p>
-				<ul class="list-inline">
-					<li><a href=""><i class="fa fa-facebook"></i></a></li>
-					<li><a href=""><i class="fa fa-twitter"></i></a></li>
-					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+<body>
+	<nav class="navbar navbar-fixed-top custom-header">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				<a class="navbar-brand">BigMall</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="navbar-links">
+				<ul class="nav navbar-nav">
+					<li class="pullUp">
+						<a href="application.html.erb">Home</a>
+					</li>
+					<li class="dropdown pullUp">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="collection">Collection <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Dresses</a></li>
+							<li><a href="#">Pants</a></li>
+							<li><a href="#">Skirts</a></li>
+							<li><a href="#">Shorts</a></li>
+						</ul>
+					</li>
+					<li class="pullUp">
+						<a href="about.html">About</a>
+					</li>
+					<li class="pullUp">
+						<a href="services.html" class="link">Services</a>
+					</li>
 				</ul>
 			</div>
-			<div class="col-sm-6">
-				<p class="heading">Subscribe To Updates</p>
-				<input type="text" placeholder="Email Address">
-				<span id="subscribe">Subscribe Now</span>
-			</div>
-			<div class="col-sm-3">
-				<p class="heading">Contact Us</p>
-				<span>123-456-7890  |  info@mysite.com</span>
-			</div>
 		</div>
-		<div class="row text-center">
-			<p>&copy;2017 By Goory Hamed.</p>
-		</div>
-	</div>
-</footer>
-<body>
+	</nav>
 	<%= yield %>
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="row text-center" id="upper">
+				<div class="col-sm-3">
+					<p class="heading">Follow Us</p>
+					<ul class="list-inline">
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<p class="heading">Subscribe To Updates</p>
+					<input type="text" placeholder="Email Address">
+					<span id="subscribe">Subscribe Now</span>
+				</div>
+				<div class="col-sm-3">
+					<p class="heading">Contact Us</p>
+					<span>123-456-7890 | info@mysite.com</span>
+				</div>
+			</div>
+			<div class="row text-center">
+				<p>&copy;2017 By Goory Hamed.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
