@@ -4,46 +4,67 @@
 	<title>Big Mall</title>
 	<%= csrf_meta_tags %>
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Seymour+One'%>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <nav class="navbar navbar-fixed-top custom-header">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand">BigMall</a>
-				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
-					<i class="fa fa-bars"></i>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-right" id="navbar-links">
-				<ul class="nav navbar-nav">
-					<li><a href="application.html.erb">Home</a></li>
-					<li><a href="">Collection</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="">Services</a></li>
-				</ul>
-			</div>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand">BigMall</a>
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
+				<i class="fa fa-bars"></i>
+			</button>
 		</div>
-	</nav>
+		<div class="collapse navbar-collapse navbar-right" id="navbar-links">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="application.html.erb">Home</a>
+					<hr>
+				</li>
+				<li>
+					<a href="collection.html">Collection</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="services.html">Services</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- header -->
+<header>
+	<div class="container">
+		<div class="row">
+			
+		</div>
+	</div>
+</header>
 <!-- footer -->
 <footer>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<h6>follow us</h6>
+		<div class="row text-center" id="upper">
+			<div class="col-sm-3">
+				<p class="heading">Follow Us</p>
 				<ul class="list-inline">
-					<li><i class="fa fa-facebook"></i></li>
-					<li><i class="fa fa-twitter"></i></li>
-					<li><i class="fa fa-instagram"></i></li>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
 				</ul>
 			</div>
-			<div class="col-sm-4">
-				
+			<div class="col-sm-6">
+				<p class="heading">Subscribe To Updates</p>
+				<input type="text" placeholder="Email Address">
+				<span id="subscribe">Subscribe Now</span>
 			</div>
-			<div class="col-sm-4">
-				
+			<div class="col-sm-3">
+				<p class="heading">Contact Us</p>
+				<span>123-456-7890  |  info@mysite.com</span>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row text-center">
 			<p>&copy;2017 By Goory Hamed.</p>
 		</div>
 	</div>

@@ -2,13 +2,36 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-.custom-header{border-radius:0;border-bottom:1px solid #bfbfbf}
+/* navbar */
+.custom-header{border-radius:0;border-bottom:1px solid #bfbfbf;}
 .custom-header .container-fluid{width:750px}
-.custom-header .navbar-brand{font-family:'Open Sans';text-shadow:none;width:160px;color:#6699ff;font-weight:700;font-size:40px}
-.custom-header a,.custom-header a:hover{text-decoration:none}
-.custom-header a #career{color:#fff;font-size:22px;font-family:'Great Vibes'}
-.custom-header .nav li a{color:#bfbfbf}
-.custom-header .nav li a:hover{color:#fff;background-color:#202020}
+.custom-header .navbar-brand{font-family:'Seymour One';text-shadow:none;width:160px;color:#e60073;font-weight:700;font-size:40px}
+.custom-header .navbar-brand:hover{color:#e60073;cursor:default}
+.custom-header .nav li a{color:#8c8c8c;font-size:18px;letter-spacing:1px}
+.custom-header .nav li a:hover{cursor:pointer;background-color:#fff} /*bootstrap use this selector to add hover state */
+.custom-header hr{border-bottom:3px solid #e60073;width:50px}
+.custom-header .navbar-toggle,
+.custom-header .navbar-toggle:focus
+{background-color:#404040;border-color:#fff;color:#fff}
+.custom-header .navbar-toggle:hover{background-color:#e60073;border-color:#e60073}
+/*footer*/
+footer{
+border-top:1px solid #bfbfbf;padding-top:20px;
+padding-bottom:10px;margin-top:150px;font-family:sans
+}
+footer #upper{margin-bottom:30px}
+footer #subscribe{padding:6px 20px;border:1px solid #202020;background-color:#202020;color:#fff;cursor:pointer}
+footer input{border:1px solid #202020;padding:4px 20px}
+footer .heading{color:#b30059;font-size:16px}
+footer a{color:#202020}
+/* responsive */
 @media (min-width:768px){
-	.custom-header{padding:20px 40px}
+	.custom-header{padding:20px 0;transition: padding 0.3s}
+	.custom-header .navbar-brand{transition: all 0.5s}
+}
+@media(max-width:767px){
+	.custom-header .navbar-brand{font-size:30px}
+}
+@media(max-width:991px){
+	footer #subscribe{padding:6px 10px}
 }
