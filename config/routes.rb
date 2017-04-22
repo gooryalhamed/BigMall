@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :items
   root 'pages#home'
+  get 'home', to: 'pages#home'
+  get 'about', to: 'pages#about'
   resources :charges
 end
