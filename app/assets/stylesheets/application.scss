@@ -2,14 +2,17 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+body{overflow-x:hidden;}
 /* navbar */
 .custom-header{
 border-radius:0;border-bottom:1px solid #bfbfbf;background-color:#fff
 }
 .custom-header .container-fluid{width:1040px}
 .custom-header .navbar-brand{
-font-family:'Indie Flower';text-shadow:none;width:160px;color:#00b3b3;font-size:40px
+font-family:'Fugaz One';text-shadow:none;width:160px;
+color:#00b3b3;font-size:40px;letter-spacing:1px;
 }
+.custom-header .navbar-header p{color:#8c8c8c}
 .custom-header .navbar-brand:hover{color:#00b3b3;cursor:default}
 .custom-header .nav li a{
 margin-right:12px;text-align:center;
@@ -27,7 +30,7 @@ cursor:pointer;background-color:#fff
     bottom: 0px;
     content: '';
     background:#009999;
-    opacity: 0.3;
+    opacity: 0.4;
     transition: all 0.3s;
 }
 .custom-header .nav .pullUp a:hover::before{
@@ -52,9 +55,9 @@ footer .heading{color:#00b3b3;font-size:16px}
 footer a{color:#202020}
 /* responsive */
 @media (min-width:768px){
-	.custom-header{padding:30px 0px;transition: padding 0.3s}
+	.custom-header{padding:20px 0px;transition: padding 0.3s}
 	.custom-header .navbar-brand{transition: all 0.5s}
-	header{margin-top:200px}
+	header{margin-top:100px;padding-top:50px}
 }
 @media(max-width:767px){
 	.custom-header .navbar-brand{font-size:24px}
