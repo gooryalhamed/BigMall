@@ -2,17 +2,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-document.getElementById("cart").click(function(){
-	openNav()
+$(".custom-header #cart").click(function(){
+	openNav();
+})
+$(".custom-header .closebtn").click(function(){
+	closeNav();
 })
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "350px";
     document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.body.style.opacity = "0.5";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
+    document.body.style.opacity = "1";
 }
