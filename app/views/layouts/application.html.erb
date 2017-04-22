@@ -4,6 +4,7 @@
 	<title>Big Mall</title>
 	<%= csrf_meta_tags %>
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag 'home' %>
 	<%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Fugaz+One|Cantarell'%>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
@@ -18,11 +19,13 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-right" id="navbar-links">
 				<ul class="nav navbar-nav">
-					<li class="pullUp">
-						<a href="application.html.erb">Home</a>
+					<li>
+						<a href="application.html.erb" class="pullUp">Home</a>
 					</li>
-					<li class="dropdown pullUp">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="collection">Collection <span class="caret"></span></a>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle pullUp" data-toggle="dropdown" role="button">Collection
+						<span class="caret"></span>
+						</a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Dresses</a></li>
 							<li><a href="#">Pants</a></li>
@@ -30,11 +33,11 @@
 							<li><a href="#">Shorts</a></li>
 						</ul>
 					</li>
-					<li class="pullUp">
-						<a href="about.html">About</a>
+					<li>
+						<a href="about.html" class="pullUp">About</a>
 					</li>
-					<li class="pullUp">
-						<a href="services.html" class="link">Services</a>
+					<li>
+						<a href="services.html" class="pullUp">Services</a>
 					</li>
 					<li>
 						<a>
@@ -81,5 +84,6 @@
 			</div>
 		</div>
 	</footer>
+	<%= javascript_include_tag 'nav', 'data-turbolinks-track': 'reload' %>
 </body>
 </html>

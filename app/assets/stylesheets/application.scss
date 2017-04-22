@@ -21,7 +21,7 @@ color:#202020;font-size:18px;letter-spacing:1px;
 .custom-header .nav li a:hover{
 cursor:pointer;background-color:#fff
 } /*bootstrap use this selector to add hover state */
-.custom-header .nav .pullUp a::before
+.custom-header .nav .pullUp::before
 {
     position: absolute;
     width: 100%;
@@ -33,7 +33,7 @@ cursor:pointer;background-color:#fff
     opacity: 0.4;
     transition: all 0.3s;
 }
-.custom-header .nav .pullUp a:hover::before{
+.custom-header .nav .pullUp:hover::before{
     height: 100%;
 }
 
